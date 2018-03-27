@@ -1,0 +1,43 @@
+<html>
+
+<body>
+<h2>page-abc</h2>
+1111111111
+<div onclick="sessionTest1()">11111111111111111111</div>
+
+<div onclick="sessionTest2()">222222222222222222222222</div>
+
+
+<script src="js/jquery-1.11.0.js"></script>
+<script>
+    function sessionTest1 () {
+        $.ajax({
+            url: '/sessionTest1',
+            type: 'GET',
+            data: {},
+            success:function(data){
+                console.log(data)
+            },
+            error:function(){
+                console.log(data)
+            }
+        })
+    }
+
+    function sessionTest2 () {
+        $.ajax({
+            url: '/sessionTest2',
+            type: 'GET',
+            data: {},
+            success:function(data){
+                console.log(data)
+            },
+            error:function(){
+                console.log(data)
+            }
+        })
+    }
+
+</script>
+</body>
+</html>
