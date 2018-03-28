@@ -22,6 +22,27 @@
         <servlet-name>springServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+    
+    <!--测试session-->
+    <servlet>
+        <servlet-name>httpTest1</servlet-name>
+        <servlet-class>cn.ee.ff.servlet.httpTest1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>httpTest1</servlet-name>
+        <url-pattern>/servlet/httpTest1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>httpTest2</servlet-name>
+        <servlet-class>cn.ee.ff.servlet.httpTest2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>httpTest2</servlet-name>
+        <url-pattern>/servlet/httpTest2</url-pattern>
+    </servlet-mapping>
+    
+    
 
     <!--spring ApplicationContext 载入 -->
     <listener>

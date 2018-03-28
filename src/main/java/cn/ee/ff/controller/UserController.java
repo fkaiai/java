@@ -67,19 +67,6 @@ public class UserController {
         return new PageList(list,pageInfo.getTotal());
     }
 
-    //session
-    @RequestMapping(value ="/sessionTest1")
-    public void sessionTest1(HttpServletRequest req){
-        req.getSession().setAttribute("username","user123");
-        System.out.println(req.getSession().getId());
-    }
-
-    @RequestMapping(value ="/sessionTest2")
-    public void sessionTest2(HttpServletRequest req){
-        String name= (String) req.getSession().getAttribute("username");
-        System.out.println(req.getSession().getId());
-        System.out.println(name);
-    }
 
 
 }
