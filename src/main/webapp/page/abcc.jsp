@@ -1,5 +1,7 @@
 <html>
-
+<head>
+<title>sdf</title>
+</head>
 <body>
 <h2>page-abc</h2>
 
@@ -18,12 +20,14 @@
             success:function(data){
                 console.log(data)
             },
-            error:function(){
+            error:function(data){
                 console.log(data)
             }
         })
     }
     sessionTest1()
+
+
 
 </script>
 </body>
