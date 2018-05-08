@@ -23,8 +23,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Controller
-//@RestController
+//@Controller
+@RestController
 public class UserController {
 
     protected final Logger logger = LoggerFactory.getLogger(this.getClass());
