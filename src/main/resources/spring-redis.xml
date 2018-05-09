@@ -11,8 +11,7 @@
       http://www.springframework.org/schema/context
       http://www.springframework.org/schema/context/spring-context-3.0.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
 
-    <!-- scanner redis properties  -->
-    <context:property-placeholder location="classpath:redis.properties" ignore-unresolvable="true"/>
+
 
     <!--启用缓存注解-->
     <!--<cache:annotation-driven cache-manager="jedisTemplate"/>-->

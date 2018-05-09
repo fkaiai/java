@@ -3,17 +3,21 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <!--扫包-->
     <context:component-scan base-package="cn.ee.ff">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
+    <!--db-->
     <context:property-placeholder location="classpath:db.properties" ignore-unresolvable="true"/>
     <import resource="classpath:spring-dao.xml"/>
 
-    <!--<import resource="classpath:spring-ehcache.xml"/>-->
+    <!-- redis  -->
+    <context:property-placeholder location="classpath:redis.properties" ignore-unresolvable="true"/>
     <import resource="classpath:spring-redis.xml"/>
+
+    <!--quartz-->
     <import resource="classpath:spring-quartz.xml"/>
 
-    <!--<context:component-scan base-package="cn.ee.ff.beans" />-->
 
 </beans>
